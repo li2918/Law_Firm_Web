@@ -289,9 +289,9 @@
     <p class="lead">一个面向高端客户的律所网站，应是专业信任的第一触点。本方案以 Loeb &amp; Loeb LLP 为标杆，交付一个视觉克制、内容权威、性能优异、可持续运营的官方网站。</p>
     <p>我们将为 <strong>X firm律师事务所</strong> 设计并开发一个现代化的官方网站，突出事务所的专业能力、行业洞察与团队实力。方案覆盖策略、设计、开发、内容迁移、上线、培训与上线后维护的完整生命周期。</p>
     <div class="grid-3">
-        <div class="card"><h4>交付周期</h4><p>14–16 周完整交付，含上线后 2 周保障期。</p></div>
-        <div class="card"><h4>预算范围</h4><p>[RMB 380,000 – 620,000] 或 [USD 55,000 – 90,000]，视功能选项而定。</p></div>
-        <div class="card"><h4>核心价值</h4><p>品牌专业化 · 业务咨询增长 · 人才吸引 · 内容营销基础。</p></div>
+        <div class="card"><h4>交付周期</h4><p>8 周快速交付，含上线后 1 周保障期。</p></div>
+        <div class="card"><h4>预算范围</h4><p>USD 5,000 – 15,000，视功能选项与内容规模而定。</p></div>
+        <div class="card"><h4>核心价值</h4><p>品牌专业化 · 业务咨询增长 · 快速上线 · 可持续运营。</p></div>
     </div>
 </section>
 
@@ -385,36 +385,36 @@
     <div class="chapter-num">05</div>
     <h2>建议解决方案</h2>
     <h3>整体策略</h3>
-    <p>采用 <strong>Headless CMS + 现代前端框架</strong> 的架构，分离内容与展现，保证性能、灵活性与未来可扩展性。</p>
-    <h3>三个备选方案</h3>
+    <p>在 USD 5,000–15,000 预算与 8 周工期约束下，我们采用 <strong>WordPress + 精品律所主题 + 轻度定制</strong> 的务实路线：既保证专业视觉与核心功能快速落地，又让客户未来可以自主更新内容、扩展插件。</p>
+    <h3>三档方案对照</h3>
     <table>
         <thead>
-            <tr><th>方案</th><th>技术组合</th><th>优势</th><th>适用场景</th></tr>
+            <tr><th>方案</th><th>技术组合</th><th>预算区间</th><th>适用场景</th></tr>
         </thead>
         <tbody>
             <tr>
-                <td><strong>A · 推荐</strong></td>
-                <td>Next.js + Sanity/Strapi + Vercel</td>
-                <td>性能最优、SEO 友好、编辑体验佳、易扩展多语言</td>
-                <td>长期内容运营、国际化需求、追求极致性能</td>
+                <td><strong>A · 精简</strong></td>
+                <td>WordPress + 现成律所主题（微调）</td>
+                <td>USD 5,000 – 8,000</td>
+                <td>首次建站、内容量小、追求快速上线</td>
             </tr>
             <tr>
-                <td>B · 经济</td>
-                <td>WordPress + 定制主题 + WPML</td>
-                <td>生态成熟、学习成本低、预算可控</td>
-                <td>预算紧、运维团队熟悉 WP、功能标准化</td>
+                <td><strong>B · 推荐</strong></td>
+                <td>WordPress + 精品主题 + 定制版块 + SEO/性能优化</td>
+                <td>USD 8,000 – 12,000</td>
+                <td>品牌形象重要、需要律师/服务/洞察完整模块</td>
             </tr>
             <tr>
-                <td>C · 企业级</td>
-                <td>Next.js + Contentful + AWS</td>
-                <td>企业合规、SLA 保障、与企业 SSO 集成</td>
-                <td>对合规、审计、多团队协作要求极高</td>
+                <td>C · 进阶</td>
+                <td>方案 B + 双语（WPML）+ 简版 CRM 表单对接</td>
+                <td>USD 12,000 – 15,000</td>
+                <td>面向国际客户、需双语与线索自动化</td>
             </tr>
         </tbody>
     </table>
     <div class="callout">
         <div class="label">推荐</div>
-        我们推荐 <strong>方案 A（Next.js + Sanity + Vercel）</strong>：在性能、可维护性与长期运营成本之间取得最佳平衡，与 Loeb 级别的用户体验对齐。
+        我们推荐 <strong>方案 B</strong>：在预算与完整度之间取得最佳平衡。8 周内上线一个视觉专业、结构清晰的律所官网，并保留未来扩展至双语或 Headless 架构的空间。
     </div>
 </section>
 
@@ -523,37 +523,39 @@
     <table>
         <thead><tr><th>层级</th><th>选型</th><th>理由</th></tr></thead>
         <tbody>
-            <tr><td>前端框架</td><td>Next.js 14+ (App Router)</td><td>SSR/ISR、SEO 友好、性能优异</td></tr>
-            <tr><td>样式</td><td>Tailwind CSS + CSS Variables</td><td>可维护、一致的设计系统</td></tr>
-            <tr><td>UI 组件</td><td>Radix UI / shadcn/ui</td><td>无障碍开箱即用</td></tr>
-            <tr><td>CMS</td><td>Sanity.io（或 Strapi）</td><td>结构化内容、实时预览、优秀编辑体验</td></tr>
-            <tr><td>搜索</td><td>Algolia 或 Meilisearch</td><td>中英文搜索、即时结果</td></tr>
-            <tr><td>表单</td><td>Formspree / 自建 + reCAPTCHA v3</td><td>防垃圾、邮件路由</td></tr>
-            <tr><td>分析</td><td>GA4 + Plausible（隐私友好）</td><td>合规与运营双需求</td></tr>
-            <tr><td>托管</td><td>Vercel（主）+ Cloudflare（CDN/WAF）</td><td>全球边缘网络、DDoS 防护</td></tr>
-            <tr><td>CI/CD</td><td>GitHub Actions</td><td>自动测试、预览环境、生产部署</td></tr>
-            <tr><td>监控</td><td>Sentry + Vercel Analytics + UptimeRobot</td><td>错误、性能、可用性全覆盖</td></tr>
+            <tr><td>CMS / 平台</td><td>WordPress（最新稳定版）</td><td>生态成熟、客户自主编辑、插件丰富</td></tr>
+            <tr><td>主题</td><td>精品律所主题（Astra Pro / Kadence / 律所定制主题）</td><td>符合行业设计、可定制、加载快</td></tr>
+            <tr><td>页面构建</td><td>Gutenberg 块编辑器（+ 少量 ACF 自定义字段）</td><td>原生、轻量、无锁定</td></tr>
+            <tr><td>SEO</td><td>Rank Math 或 Yoast SEO</td><td>站点地图、结构化数据、OG 卡片</td></tr>
+            <tr><td>性能</td><td>WP Rocket + ShortPixel 图片压缩</td><td>缓存、懒加载、WebP 自动转换</td></tr>
+            <tr><td>安全</td><td>Wordfence + 自动更新 + 定期备份（UpdraftPlus）</td><td>防火墙、恶意扫描、数据安全</td></tr>
+            <tr><td>表单</td><td>Contact Form 7 / WPForms + reCAPTCHA v3</td><td>联系表单、职业申请、防垃圾</td></tr>
+            <tr><td>分析</td><td>Google Analytics 4 + Search Console</td><td>流量与 SEO 监测</td></tr>
+            <tr><td>托管</td><td>SiteGround / Kinsta Starter / Cloudways</td><td>托管 WP、日备份、一键 staging</td></tr>
+            <tr><td>CDN / DNS</td><td>Cloudflare（免费层）</td><td>全球加速、基础 WAF、DDoS 防护</td></tr>
+            <tr><td>监控</td><td>UptimeRobot（免费）</td><td>可用性监测</td></tr>
         </tbody>
     </table>
+    <p style="color:var(--color-muted);font-size:13px;">上述方案以市场成熟工具为主，确保客户可自主运营、无单一供应商锁定。未来若业务规模扩大，可平滑迁移到 Headless 架构。</p>
 </section>
 
 <!-- 10 CMS -->
 <section class="chapter" id="s10">
     <div class="chapter-num">10</div>
     <h2>CMS 与内容工作流</h2>
-    <h3>内容模型</h3>
+    <h3>内容类型（WordPress Custom Post Type）</h3>
     <ul>
-        <li><strong>Person（律师）：</strong>姓名、头衔、照片、简介、执业领域、办公室、语言、教育、认证、代表案例、出版物。</li>
-        <li><strong>Service：</strong>类型（Industry/Practice）、描述、团队、相关洞察。</li>
-        <li><strong>Insight：</strong>标题、摘要、正文、作者、主题、相关服务、发布时间、特色图。</li>
-        <li><strong>News / Event / Award / Location / Job / Page / Setting</strong></li>
+        <li><strong>Person（律师）：</strong>姓名、头衔、照片、简介、执业领域、教育、联系方式。</li>
+        <li><strong>Service（服务）：</strong>名称、描述、相关律师、相关洞察。</li>
+        <li><strong>Insight（洞察/文章）：</strong>标题、摘要、正文、作者、分类、标签、特色图。</li>
+        <li><strong>News / Career：</strong>新闻与招聘岗位，作为标准 CPT 管理。</li>
     </ul>
-    <h3>工作流</h3>
+    <h3>编辑工作流</h3>
     <ol>
-        <li>作者（律师/市场）在 CMS 创建草稿。</li>
-        <li>编辑审核 → 合规审核（必要时） → 发布。</li>
-        <li>角色权限：作者 / 编辑 / 发布者 / 管理员。</li>
-        <li>发布触发 Webhook → Next.js 增量再生（ISR），通常 10 秒内生效。</li>
+        <li>作者在 WP 后台创建草稿（所见即所得）。</li>
+        <li>编辑 / 合伙人审阅 → 发布。</li>
+        <li>内置角色权限：Author / Editor / Administrator，无需额外开发。</li>
+        <li>发布即生效；开启缓存预热，通常 1 分钟内全站刷新。</li>
     </ol>
 </section>
 
@@ -580,11 +582,11 @@
 <section class="chapter" id="s12">
     <div class="chapter-num">12</div>
     <h2>多语言与国际化</h2>
+    <p class="lead">多语言在本预算下作为 <strong>可选增配项</strong>（方案 C），基础方案默认单语上线，保留未来扩展能力。</p>
     <ul>
-        <li>默认支持 <strong>中文（简体）与英文</strong>，架构预留繁体与日/韩扩展。</li>
-        <li>路径策略：/zh 与 /en 镜像；hreflang 正确标注；默认语言基于 Accept-Language + 地理 IP。</li>
-        <li>内容级翻译：CMS 中每篇文档可独立翻译或共享字段。</li>
-        <li>URL 本地化：slug 可独立翻译以提升 SEO。</li>
+        <li>基础方案：单语（中文或英文，由客户选定），主题预留 i18n 字符串，便于日后翻译。</li>
+        <li>双语增配（+ USD 1,500 – 3,000）：WPML 或 Polylang 插件，支持 <strong>中文 / 英文</strong> 双语；hreflang 标注；URL 本地化。</li>
+        <li>内容翻译由客户方提供，我们负责技术接入与页面排版。</li>
     </ul>
 </section>
 
@@ -618,14 +620,14 @@
         <li>全站 HTTPS（HSTS）、CSP、X-Frame-Options、Referrer-Policy 等响应头。</li>
         <li>Cloudflare WAF + Bot Management + DDoS 防护。</li>
         <li>表单：reCAPTCHA v3 + 后端速率限制。</li>
-        <li>依赖安全：Dependabot + npm audit + 每季度渗透测试。</li>
-        <li>备份：CMS 每日自动备份，保留 30 天；关键配置版本化存储。</li>
+        <li>WordPress 核心与插件自动更新；Wordfence 恶意软件扫描。</li>
+        <li>备份：UpdraftPlus 每日自动备份到云端，保留 30 天。</li>
     </ul>
     <h3>托管</h3>
     <ul>
-        <li>Vercel Enterprise（或 Pro）承载生产；Cloudflare 作为 DNS + CDN + WAF。</li>
-        <li>环境：生产 · 预发布（Staging） · 开发预览（每个 PR 自动预览）。</li>
-        <li>SLA：99.9% 可用性；RTO &lt; 4 小时，RPO &lt; 24 小时。</li>
+        <li>托管 WordPress 服务（SiteGround / Cloudways / Kinsta Starter），内置缓存与 SSL。</li>
+        <li>Cloudflare（免费层）作为 DNS + CDN + 基础 WAF。</li>
+        <li>环境：生产 + Staging（一键克隆），由托管平台原生支持。</li>
     </ul>
 </section>
 
@@ -661,39 +663,34 @@
     <h2>阶段与里程碑</h2>
     <div class="timeline">
         <div class="phase">
-            <div class="weeks">第 1–2 周</div>
+            <div class="weeks">第 1 周</div>
             <h4>阶段一 · 发现与策略</h4>
-            <p>需求访谈、竞品分析、内容审计、信息架构定稿、项目章程签署。</p>
+            <p>需求访谈、内容清单确认、站点地图定稿、品牌色与字体确定。</p>
+        </div>
+        <div class="phase">
+            <div class="weeks">第 2 周</div>
+            <h4>阶段二 · 视觉设计</h4>
+            <p>首页 + 2–3 个关键页面（律师页、服务页、洞察页）高保真设计；一轮客户反馈。</p>
         </div>
         <div class="phase">
             <div class="weeks">第 3–5 周</div>
-            <h4>阶段二 · 设计</h4>
-            <p>线框图 → 视觉概念 → 高保真关键页 → 组件库 → 设计规范。两轮客户反馈循环。</p>
+            <h4>阶段三 · 开发与定制</h4>
+            <p>WordPress 环境搭建、主题安装与定制、CPT 与字段配置、页面搭建、响应式调整。</p>
         </div>
         <div class="phase">
-            <div class="weeks">第 5–11 周</div>
-            <h4>阶段三 · 开发（与设计重叠）</h4>
-            <p>基础架构、CMS 建模、页面开发、集成、预览环境每周更新。</p>
+            <div class="weeks">第 6 周</div>
+            <h4>阶段四 · 内容导入</h4>
+            <p>律师简介、服务描述、首批 5–10 篇洞察文章导入；图片优化与排版。</p>
         </div>
         <div class="phase">
-            <div class="weeks">第 10–12 周</div>
-            <h4>阶段四 · 内容迁移</h4>
-            <p>律师档案、服务描述、过往文章导入，多语言校对。</p>
-        </div>
-        <div class="phase">
-            <div class="weeks">第 12–13 周</div>
+            <div class="weeks">第 7 周</div>
             <h4>阶段五 · 测试与优化</h4>
-            <p>功能、兼容性、性能、可访问性、安全测试；客户 UAT。</p>
+            <p>浏览器兼容性、移动端、性能、表单、SEO 基础检查；客户 UAT 与修复。</p>
         </div>
         <div class="phase">
-            <div class="weeks">第 14 周</div>
-            <h4>阶段六 · 上线</h4>
-            <p>DNS 切换、CDN 预热、生产发布、培训、交接。</p>
-        </div>
-        <div class="phase">
-            <div class="weeks">第 15–16 周</div>
-            <h4>阶段七 · 保障与复盘</h4>
-            <p>上线保障（Hypercare）、问题修复、项目复盘、维护期启动。</p>
+            <div class="weeks">第 8 周</div>
+            <h4>阶段六 · 上线与培训</h4>
+            <p>DNS 切换、SSL、生产部署；2 小时管理员培训；1 周上线保障期启动。</p>
         </div>
     </div>
 </section>
@@ -706,14 +703,12 @@
     <table>
         <thead><tr><th>里程碑</th><th>交付物</th><th>时间</th></tr></thead>
         <tbody>
-            <tr><td>M1 · 启动</td><td>项目章程、项目计划、沟通机制</td><td>T0 + 1 周</td></tr>
-            <tr><td>M2 · IA 定稿</td><td>站点地图、用户旅程、内容清单</td><td>T0 + 2 周</td></tr>
-            <tr><td>M3 · 设计定稿</td><td>高保真设计 + 组件库</td><td>T0 + 5 周</td></tr>
-            <tr><td>M4 · 开发 Alpha</td><td>核心页面可预览</td><td>T0 + 9 周</td></tr>
-            <tr><td>M5 · 内容就绪</td><td>内容全部导入</td><td>T0 + 12 周</td></tr>
-            <tr><td>M6 · UAT 通过</td><td>缺陷收敛、性能达标</td><td>T0 + 13 周</td></tr>
-            <tr><td>M7 · 上线</td><td>生产环境、SSL、监控就绪</td><td>T0 + 14 周</td></tr>
-            <tr><td>M8 · 交付完成</td><td>文档、培训、保障期结束</td><td>T0 + 16 周</td></tr>
+            <tr><td>M1 · 启动与 IA</td><td>需求纪要、站点地图、内容清单</td><td>T0 + 1 周</td></tr>
+            <tr><td>M2 · 设计定稿</td><td>关键页面高保真设计（2–3 页）</td><td>T0 + 2 周</td></tr>
+            <tr><td>M3 · 开发 Alpha</td><td>staging 环境可预览，核心页面完成</td><td>T0 + 5 周</td></tr>
+            <tr><td>M4 · 内容就绪</td><td>首批内容导入、图片优化</td><td>T0 + 6 周</td></tr>
+            <tr><td>M5 · UAT 通过</td><td>缺陷收敛、性能检查</td><td>T0 + 7 周</td></tr>
+            <tr><td>M6 · 正式上线</td><td>生产环境、SSL、监控、培训完成</td><td>T0 + 8 周</td></tr>
         </tbody>
     </table>
 </section>
@@ -780,28 +775,26 @@
     <table>
         <thead><tr><th>套餐</th><th>月度工时</th><th>内容</th><th>报价</th></tr></thead>
         <tbody>
-            <tr><td>基础</td><td class="num">8h</td><td>托管管理、安全补丁、小修小补、月报</td><td class="num">[RMB 4,800/月]</td></tr>
-            <tr><td>标准 · 推荐</td><td class="num">20h</td><td>基础 + 新功能小迭代 + SEO 监测 + 季度审计</td><td class="num">[RMB 11,000/月]</td></tr>
-            <tr><td>企业</td><td class="num">40h+</td><td>标准 + 优先响应 SLA + 专属 PM + A/B 测试</td><td class="num">面议</td></tr>
+            <tr><td>基础</td><td class="num">4h</td><td>WP 与插件更新、安全补丁、日备份、小修小补</td><td class="num">USD 150 / 月</td></tr>
+            <tr><td>标准 · 推荐</td><td class="num">8h</td><td>基础 + 内容录入协助 + SEO 月报 + 小改版</td><td class="num">USD 300 / 月</td></tr>
+            <tr><td>按需</td><td class="num">—</td><td>按工时计费，适合偶发需求</td><td class="num">USD 60 / 小时</td></tr>
         </tbody>
     </table>
-    <p>所有套餐均包含 7×24 监控、关键故障 1 小时内响应。</p>
+    <p>所有套餐均包含可用性监控，关键故障 4 小时内响应。</p>
 </section>
 
 <!-- 24 团队 -->
 <section class="chapter" id="s24">
     <div class="chapter-num">24</div>
     <h2>团队与角色分工</h2>
+    <p class="lead">精干小团队模式：一人身兼多角色，沟通高效，符合 8 周交付节奏。</p>
     <table>
-        <thead><tr><th>角色</th><th>人数</th><th>主要职责</th></tr></thead>
+        <thead><tr><th>角色</th><th>投入</th><th>主要职责</th></tr></thead>
         <tbody>
-            <tr><td>项目经理（PM）</td><td class="num">1</td><td>范围、进度、沟通、风险管理</td></tr>
-            <tr><td>策略师 / 内容架构师</td><td class="num">1</td><td>IA、内容模型、SEO 策略</td></tr>
-            <tr><td>UX/UI 设计师</td><td class="num">1–2</td><td>线框、视觉、组件库</td></tr>
-            <tr><td>前端工程师</td><td class="num">2</td><td>Next.js、组件实现、性能优化</td></tr>
-            <tr><td>全栈 / CMS 工程师</td><td class="num">1</td><td>CMS 建模、集成、部署</td></tr>
-            <tr><td>QA 测试工程师</td><td class="num">1</td><td>测试计划、自动化、可访问性</td></tr>
-            <tr><td>DevOps（兼职）</td><td class="num">0.5</td><td>CI/CD、监控、安全</td></tr>
+            <tr><td>项目负责人 / PM</td><td class="num">兼职</td><td>对接客户、进度、范围、质量把关</td></tr>
+            <tr><td>UI 设计师</td><td class="num">兼职</td><td>关键页面设计、视觉规范、主题定制指导</td></tr>
+            <tr><td>WordPress 开发者</td><td class="num">全职 × 1</td><td>主题定制、CPT / 字段开发、页面搭建、插件配置、部署</td></tr>
+            <tr><td>内容 / QA</td><td class="num">兼职</td><td>内容录入、排版、测试、SEO 基础检查</td></tr>
         </tbody>
     </table>
     <h3>客户方期望配备</h3>
@@ -817,28 +810,34 @@
 <section class="chapter" id="s25">
     <div class="chapter-num">25</div>
     <h2>预算明细</h2>
-    <p class="lead">以下为推荐方案 A 的预算区间，按功能模块分解。最终报价依需求确认后签署的 SOW 为准。</p>
+    <p class="lead">以下为推荐方案 B 的预算分解。最终报价依需求确认后签署的 SOW 为准。</p>
     <table>
-        <thead><tr><th>项目</th><th>说明</th><th>占比</th><th>区间（RMB）</th></tr></thead>
+        <thead><tr><th>项目</th><th>说明</th><th>占比</th><th>区间（USD）</th></tr></thead>
         <tbody>
-            <tr><td>发现与策略</td><td>访谈、IA、内容模型</td><td class="num">10%</td><td class="num">38,000 – 62,000</td></tr>
-            <tr><td>视觉与 UX 设计</td><td>关键页、组件库、规范</td><td class="num">20%</td><td class="num">76,000 – 124,000</td></tr>
-            <tr><td>前端开发</td><td>Next.js、响应式、动效</td><td class="num">28%</td><td class="num">106,400 – 173,600</td></tr>
-            <tr><td>CMS 与后端</td><td>Sanity 建模、集成、API</td><td class="num">14%</td><td class="num">53,200 – 86,800</td></tr>
-            <tr><td>内容迁移与多语言</td><td>导入、翻译协调、校对</td><td class="num">8%</td><td class="num">30,400 – 49,600</td></tr>
-            <tr><td>SEO / 性能 / 可访问性</td><td>技术 SEO、审计与整改</td><td class="num">6%</td><td class="num">22,800 – 37,200</td></tr>
-            <tr><td>测试与 QA</td><td>自动化、兼容性、UAT 支持</td><td class="num">6%</td><td class="num">22,800 – 37,200</td></tr>
-            <tr><td>上线与培训</td><td>部署、培训、文档</td><td class="num">4%</td><td class="num">15,200 – 24,800</td></tr>
-            <tr><td>项目管理</td><td>全程 PM 与质量控制</td><td class="num">4%</td><td class="num">15,200 – 24,800</td></tr>
-            <tr style="background:#f7f7f5;font-weight:700;"><td colspan="2">合计（不含税）</td><td class="num">100%</td><td class="num">380,000 – 620,000</td></tr>
+            <tr><td>发现与策略</td><td>需求访谈、IA、内容清单</td><td class="num">8%</td><td class="num">400 – 1,200</td></tr>
+            <tr><td>视觉设计</td><td>关键页高保真（2–3 页）、品牌微调</td><td class="num">18%</td><td class="num">900 – 2,700</td></tr>
+            <tr><td>WordPress 开发</td><td>主题安装与定制、CPT、页面搭建、响应式</td><td class="num">38%</td><td class="num">1,900 – 5,700</td></tr>
+            <tr><td>插件配置与集成</td><td>SEO、性能、表单、安全、分析</td><td class="num">8%</td><td class="num">400 – 1,200</td></tr>
+            <tr><td>内容导入</td><td>律师、服务、首批洞察文章排版</td><td class="num">10%</td><td class="num">500 – 1,500</td></tr>
+            <tr><td>测试与优化</td><td>兼容性、性能、表单、UAT 支持</td><td class="num">8%</td><td class="num">400 – 1,200</td></tr>
+            <tr><td>上线与培训</td><td>部署、SSL、培训、文档</td><td class="num">6%</td><td class="num">300 – 900</td></tr>
+            <tr><td>项目管理</td><td>全程 PM 与沟通</td><td class="num">4%</td><td class="num">200 – 600</td></tr>
+            <tr style="background:#f7f7f5;font-weight:700;"><td colspan="2">合计（不含税）</td><td class="num">100%</td><td class="num">5,000 – 15,000</td></tr>
         </tbody>
     </table>
-    <h3>年度运营成本（客户侧）</h3>
+    <h3>增配选项（按需）</h3>
     <ul>
-        <li>Vercel Pro / Enterprise：约 USD 240 – 3,600 / 年。</li>
-        <li>Sanity：约 USD 1,200 – 4,000 / 年（视团队与带宽）。</li>
-        <li>Algolia / Meilisearch：约 USD 600 – 2,400 / 年。</li>
-        <li>域名、邮件、GA4：约 USD 200 / 年。</li>
+        <li>中英双语（WPML / Polylang）：+ USD 1,500 – 3,000。</li>
+        <li>CRM 集成（HubSpot / Mailchimp）：+ USD 500 – 1,200。</li>
+        <li>律师照片专业摄影协调：+ USD 800 – 2,000（视拍摄地点与人数）。</li>
+        <li>额外洞察文章排版（超出 10 篇）：USD 30 / 篇。</li>
+    </ul>
+    <h3>年度运营成本（客户侧 · 非项目费用）</h3>
+    <ul>
+        <li>域名：约 USD 15 / 年。</li>
+        <li>WordPress 托管（SiteGround / Cloudways）：约 USD 120 – 400 / 年。</li>
+        <li>精品主题许可（若需续费）：约 USD 60 – 100 / 年。</li>
+        <li>邮件、GA4、Cloudflare 免费层：USD 0。</li>
     </ul>
 </section>
 
@@ -849,13 +848,12 @@
     <table>
         <thead><tr><th>节点</th><th>触发</th><th>比例</th></tr></thead>
         <tbody>
-            <tr><td>首款</td><td>合同签署后 5 个工作日内</td><td class="num">30%</td></tr>
-            <tr><td>设计验收款</td><td>M3 设计定稿后</td><td class="num">25%</td></tr>
-            <tr><td>开发验收款</td><td>M4 Alpha 演示通过后</td><td class="num">25%</td></tr>
-            <tr><td>上线尾款</td><td>M7 上线并通过验收后</td><td class="num">20%</td></tr>
+            <tr><td>首款</td><td>合同签署后 5 个工作日内</td><td class="num">40%</td></tr>
+            <tr><td>设计验收款</td><td>M2 设计定稿后</td><td class="num">30%</td></tr>
+            <tr><td>上线尾款</td><td>M6 正式上线并通过验收后</td><td class="num">30%</td></tr>
         </tbody>
     </table>
-    <p>开具 6% 增值税专用发票（或客户指定税率），以 RMB 结算；美元结算按当日中行中间价。</p>
+    <p>以 USD 结算，支持银行电汇 / PayPal / 对公转账；可按客户所在地要求开具发票或收据。</p>
 </section>
 
 <!-- 27 风险 -->
