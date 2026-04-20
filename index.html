@@ -214,10 +214,83 @@
         a { color: var(--color-accent); }
         a:hover { text-decoration: underline; }
 
+        @page {
+            size: A4;
+            margin: 14mm 12mm;
+        }
         @media print {
-            .toc { break-after: page; }
-            section.chapter { break-inside: avoid; }
-            .cover { break-after: page; }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            html, body { background: #fff; font-size: 10.5pt; line-height: 1.6; }
+            .container { max-width: 100%; padding: 0; }
+
+            /* Cover: own page, edge-to-edge */
+            .cover {
+                padding: 24mm 14mm 20mm;
+                min-height: 260mm;
+                break-after: page;
+                page-break-after: always;
+            }
+            .cover::before, .cover::after { display: none; }
+            .cover h1 { font-size: 30pt; }
+            .cover .sub { font-size: 12pt; }
+            .cover .meta { gap: 12pt 32pt; padding-top: 16pt; }
+
+            /* TOC: own page(s) */
+            .toc {
+                padding: 14mm 0;
+                break-after: page;
+                page-break-after: always;
+            }
+            .toc ol { columns: 2; column-gap: 24pt; }
+            .toc ol li { break-inside: avoid; page-break-inside: avoid; }
+
+            /* Chapters: flow naturally, keep titles with content */
+            section.chapter {
+                padding: 10mm 0 6mm;
+                break-inside: auto;
+                page-break-inside: auto;
+            }
+            section.chapter + section.chapter { border-top: 1px solid var(--color-line); }
+            .chapter-num, .chapter h2, .chapter h3, .chapter h4 {
+                break-after: avoid;
+                page-break-after: avoid;
+            }
+            .chapter h2 { font-size: 18pt; }
+            .chapter h3 { font-size: 12pt; }
+            .chapter h2 + .lead { font-size: 10.5pt; margin-bottom: 12pt; }
+
+            /* Tables: repeat header, don't split rows */
+            table { page-break-inside: auto; font-size: 9.5pt; }
+            thead { display: table-header-group; }
+            tr { page-break-inside: avoid; break-inside: avoid; }
+
+            /* Callouts / cards / timeline items stay together */
+            .callout, .card, .timeline .phase, pre {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            .timeline .phase { margin-bottom: 12pt; }
+
+            /* Signature: own page */
+            .signature {
+                padding: 30mm 14mm;
+                break-before: page;
+                page-break-before: always;
+            }
+            .signature .sig-line { height: 32pt; }
+
+            footer { padding: 12pt; font-size: 9pt; }
+
+            /* Links: keep color but drop underline and URL */
+            a { text-decoration: none; }
+            a[href]:after { content: ""; }
+
+            /* Kill hover/focus effects */
+            a:hover, a:focus { color: inherit; }
         }
     </style>
 </head>
